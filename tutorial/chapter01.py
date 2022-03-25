@@ -1,9 +1,11 @@
 from enum import Enum
 
-from fastapi import APIRouter, Path
+from fastapi import APIRouter
 
 app01 = APIRouter()
 
+
+# 路径参数学习
 
 @app01.get('/hello/{path}')
 def hello(path: str):

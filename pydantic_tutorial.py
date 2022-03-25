@@ -16,6 +16,8 @@ class User(BaseModel):
     friends: List[int] = []
 
 
+print("\033[31m1. --- Basemodel ---\033[0m")
+
 external_data = {
     "id": "123",
     "signup_ts": "2022-3-20 11:21",
@@ -99,7 +101,5 @@ co_orm = Company(
     name='Testing',
     domains=['www.baidu.com', 'www.sohu.com']
 )
-
-
 
 print(CompanyModel.from_orm(co_orm))
