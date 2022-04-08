@@ -37,6 +37,6 @@ def path_getcity(city: CityInfo):
         return {'city_name': city, 'confirmed': None, 'dead': None}
 
 
-@app01.get('/path_file/{file_path:path}')       # 文件路径参数校验
+@app01.get('/path_file/{file_path:path}')       # 文件路径参数校验 添加到路径里面使用":path"
 def path_file(file_path: str):
     return file_path

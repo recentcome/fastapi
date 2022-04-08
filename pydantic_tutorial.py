@@ -1,4 +1,4 @@
-from datetime import datetime, date
+from datetime import datetime, date, time
 from typing import List, Optional
 from pathlib import Path
 
@@ -103,3 +103,4 @@ co_orm = Company(
 )
 
 print(CompanyModel.from_orm(co_orm))
+
